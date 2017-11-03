@@ -15,6 +15,9 @@
 		11C09C761FAC5376001DE1A7 /* FoldableTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C09C751FAC5376001DE1A7 /* FoldableTableTests.m */; };
 		11C09C811FAC5376001DE1A7 /* FoldableTableUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C09C801FAC5376001DE1A7 /* FoldableTableUITests.m */; };
 		11C09C931FAC561D001DE1A7 /* FdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C09C921FAC561D001DE1A7 /* FdVC.m */; };
+		11C09C971FAC5C44001DE1A7 /* fdData.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C09C961FAC5C44001DE1A7 /* fdData.m */; };
+		11C09C9C1FAC6648001DE1A7 /* FdCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C09C9A1FAC6648001DE1A7 /* FdCollectionViewCell.m */; };
+		11C09C9D1FAC6648001DE1A7 /* FdCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11C09C9B1FAC6648001DE1A7 /* FdCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		11C09C821FAC5376001DE1A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11C09C911FAC561D001DE1A7 /* FdVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FdVC.h; path = ../FdVC.h; sourceTree = "<group>"; };
 		11C09C921FAC561D001DE1A7 /* FdVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FdVC.m; path = ../FdVC.m; sourceTree = "<group>"; };
+		11C09C951FAC5C44001DE1A7 /* fdData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fdData.h; sourceTree = "<group>"; };
+		11C09C961FAC5C44001DE1A7 /* fdData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fdData.m; sourceTree = "<group>"; };
+		11C09C991FAC6648001DE1A7 /* FdCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FdCollectionViewCell.h; sourceTree = "<group>"; };
+		11C09C9A1FAC6648001DE1A7 /* FdCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FdCollectionViewCell.m; sourceTree = "<group>"; };
+		11C09C9B1FAC6648001DE1A7 /* FdCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FdCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,8 @@
 		11C09C5A1FAC5376001DE1A7 /* FoldableTable */ = {
 			isa = PBXGroup;
 			children = (
+				11C09C981FAC65D6001DE1A7 /* View */,
+				11C09C941FAC5BDC001DE1A7 /* Data */,
 				11C09C911FAC561D001DE1A7 /* FdVC.h */,
 				11C09C921FAC561D001DE1A7 /* FdVC.m */,
 				11C09C5E1FAC5376001DE1A7 /* AppDelegate.h */,
@@ -138,6 +148,25 @@
 				11C09C821FAC5376001DE1A7 /* Info.plist */,
 			);
 			path = FoldableTableUITests;
+			sourceTree = "<group>";
+		};
+		11C09C941FAC5BDC001DE1A7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				11C09C951FAC5C44001DE1A7 /* fdData.h */,
+				11C09C961FAC5C44001DE1A7 /* fdData.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		11C09C981FAC65D6001DE1A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11C09C991FAC6648001DE1A7 /* FdCollectionViewCell.h */,
+				11C09C9A1FAC6648001DE1A7 /* FdCollectionViewCell.m */,
+				11C09C9B1FAC6648001DE1A7 /* FdCollectionViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +280,7 @@
 			files = (
 				11C09C6B1FAC5376001DE1A7 /* LaunchScreen.storyboard in Resources */,
 				11C09C681FAC5376001DE1A7 /* Assets.xcassets in Resources */,
+				11C09C9D1FAC6648001DE1A7 /* FdCollectionViewCell.xib in Resources */,
 				11C09C661FAC5376001DE1A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +309,8 @@
 				11C09C601FAC5376001DE1A7 /* AppDelegate.m in Sources */,
 				11C09C931FAC561D001DE1A7 /* FdVC.m in Sources */,
 				11C09C5D1FAC5376001DE1A7 /* main.m in Sources */,
+				11C09C971FAC5C44001DE1A7 /* fdData.m in Sources */,
+				11C09C9C1FAC6648001DE1A7 /* FdCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +548,7 @@
 				11C09C871FAC5376001DE1A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11C09C881FAC5376001DE1A7 /* Build configuration list for PBXNativeTarget "FoldableTableTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +557,7 @@
 				11C09C8A1FAC5376001DE1A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11C09C8B1FAC5376001DE1A7 /* Build configuration list for PBXNativeTarget "FoldableTableUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +566,7 @@
 				11C09C8D1FAC5376001DE1A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
